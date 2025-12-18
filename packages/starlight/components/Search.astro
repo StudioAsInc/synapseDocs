@@ -134,7 +134,7 @@ if (project.trailingSlash === 'never') dataAttributes['data-strip-trailing-slash
 
 			window.addEventListener('DOMContentLoaded', () => {
 				if (import.meta.env.DEV) return;
-				const onIdle = window.requestIdleCallback || ((cb) => setTimeout(cb, 1));
+				const onIdle = window.requestIdleCallback || ((cb) => setTimeout(cb, 200));
 				onIdle(async () => {
 					// @ts-expect-error — Missing types for @pagefind/default-ui package.
 					const { PagefindUI } = await import('@pagefind/default-ui');
