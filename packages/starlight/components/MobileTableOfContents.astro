@@ -126,9 +126,12 @@ const { toc } = Astro.locals.starlightRoute;
 				details.open = false;
 			};
 			// Close the table of contents whenever a link is clicked.
-			details.querySelectorAll('a').forEach((a) => {
-				a.addEventListener('click', closeToC);
-			});
+			const onLinkClick = (event: Event) => {
+				if (event.target instanceof Element && event.target.closest('a')) {
+					closeToC();
+				}
+			};
+			details.addEventListener('click', onLinkClick);
 			// Close the table of contents when a user clicks outside of it.
 			window.addEventListener('click', (e) => {
 				if (!details.contains(e.target as Node)) closeToC();
