@@ -29,6 +29,8 @@ export interface SidebarGroup {
 	entries: (SidebarLink | SidebarGroup)[];
 	collapsed: boolean;
 	badge: Badge | undefined;
+	/** Whether the group contains the current page link. */
+	containsCurrent?: boolean;
 }
 
 export type SidebarEntry = SidebarLink | SidebarGroup;

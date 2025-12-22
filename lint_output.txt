@@ -1,0 +1,164 @@
+
+> starlight-root@1.0.0 lint /app
+> eslint . --max-warnings 0
+
+
+/app/docs/src/content.config.ts
+   6:2   error  Unsafe assignment of an error typed value                 @typescript-eslint/no-unsafe-assignment
+   6:8   error  Unsafe call of a(n) `error` type typed value              @typescript-eslint/no-unsafe-call
+  10:2   error  Unsafe assignment of an error typed value                 @typescript-eslint/no-unsafe-assignment
+  10:8   error  Unsafe call of a(n) `error` type typed value              @typescript-eslint/no-unsafe-call
+  12:3   error  Unsafe assignment of an error typed value                 @typescript-eslint/no-unsafe-assignment
+  13:4   error  Unsafe assignment of an error typed value                 @typescript-eslint/no-unsafe-assignment
+  13:12  error  Unsafe call of a(n) `error` type typed value              @typescript-eslint/no-unsafe-call
+  13:14  error  Unsafe member access .object on an `error` typed value    @typescript-eslint/no-unsafe-member-access
+  14:5   error  Unsafe assignment of an error typed value                 @typescript-eslint/no-unsafe-assignment
+  14:26  error  Unsafe call of a(n) `error` type typed value              @typescript-eslint/no-unsafe-call
+  14:26  error  Unsafe call of a(n) `error` type typed value              @typescript-eslint/no-unsafe-call
+  14:28  error  Unsafe member access .string on an `error` typed value    @typescript-eslint/no-unsafe-member-access
+  14:37  error  Unsafe member access .optional on an `error` typed value  @typescript-eslint/no-unsafe-member-access
+
+/app/packages/starlight/__tests__/basics/route-data.test.ts
+  87:52  error  Unsafe member access .lastUpdated on an `any` value  @typescript-eslint/no-unsafe-member-access
+
+/app/packages/starlight/__tests__/basics/routing.test.ts
+  32:8   error  Unsafe assignment of an `any` value           @typescript-eslint/no-unsafe-assignment
+  34:9   error  Unsafe assignment of an `any` value           @typescript-eslint/no-unsafe-assignment
+  34:15  error  Unsafe call of a(n) `any` typed value         @typescript-eslint/no-unsafe-call
+  34:20  error  Unsafe member access .find on an `any` value  @typescript-eslint/no-unsafe-member-access
+  34:38  error  Unsafe member access .id on an `any` value    @typescript-eslint/no-unsafe-member-access
+  34:62  error  Unsafe member access .id on an `any` value    @typescript-eslint/no-unsafe-member-access
+  44:10  error  Unsafe assignment of an `any` value           @typescript-eslint/no-unsafe-assignment
+  49:10  error  Unsafe assignment of an `any` value           @typescript-eslint/no-unsafe-assignment
+
+/app/packages/starlight/__tests__/basics/starlight-page-route-data-extend.test.ts
+  55:25  error  Unsafe member access .category on an `any` value  @typescript-eslint/no-unsafe-member-access
+
+/app/packages/starlight/__tests__/basics/starlight-page-route-data.test.ts
+   46:25  error  Unsafe member access .editUrl on an `any` value      @typescript-eslint/no-unsafe-member-access
+   50:25  error  Unsafe member access .head on an `any` value         @typescript-eslint/no-unsafe-member-access
+   51:25  error  Unsafe member access .pagefind on an `any` value     @typescript-eslint/no-unsafe-member-access
+   52:25  error  Unsafe member access .template on an `any` value     @typescript-eslint/no-unsafe-member-access
+   54:25  error  Unsafe member access .title on an `any` value        @typescript-eslint/no-unsafe-member-access
+   96:25  error  Unsafe member access .head on an `any` value         @typescript-eslint/no-unsafe-member-access
+  107:25  error  Unsafe member access .lastUpdated on an `any` value  @typescript-eslint/no-unsafe-member-access
+  108:25  error  Unsafe member access .pagefind on an `any` value     @typescript-eslint/no-unsafe-member-access
+  109:25  error  Unsafe member access .template on an `any` value     @typescript-eslint/no-unsafe-member-access
+  494:25  error  Unsafe member access .editUrl on an `any` value      @typescript-eslint/no-unsafe-member-access
+  547:25  error  Unsafe member access .hero on an `any` value         @typescript-eslint/no-unsafe-member-access
+  549:25  error  Unsafe member access .hero on an `any` value         @typescript-eslint/no-unsafe-member-access
+  549:38  error  Unsafe member access ['file'] on an `any` value      @typescript-eslint/no-unsafe-member-access
+  574:25  error  Unsafe member access .hero on an `any` value         @typescript-eslint/no-unsafe-member-access
+  576:25  error  Unsafe member access .hero on an `any` value         @typescript-eslint/no-unsafe-member-access
+  576:38  error  Unsafe member access ['file'] on an `any` value      @typescript-eslint/no-unsafe-member-access
+  578:25  error  Unsafe member access .hero on an `any` value         @typescript-eslint/no-unsafe-member-access
+  578:38  error  Unsafe member access ['file'] on an `any` value      @typescript-eslint/no-unsafe-member-access
+  580:25  error  Unsafe member access .hero on an `any` value         @typescript-eslint/no-unsafe-member-access
+  580:38  error  Unsafe member access ['file'] on an `any` value      @typescript-eslint/no-unsafe-member-access
+  582:25  error  Unsafe member access .hero on an `any` value         @typescript-eslint/no-unsafe-member-access
+  582:38  error  Unsafe member access ['file'] on an `any` value      @typescript-eslint/no-unsafe-member-access
+  584:25  error  Unsafe member access .hero on an `any` value         @typescript-eslint/no-unsafe-member-access
+  584:38  error  Unsafe member access ['file'] on an `any` value      @typescript-eslint/no-unsafe-member-access
+  622:25  error  Unsafe member access .title on an `any` value        @typescript-eslint/no-unsafe-member-access
+
+/app/packages/starlight/__tests__/head/head.test.ts
+  219:5   error  Unsafe assignment of an `any` value           @typescript-eslint/no-unsafe-assignment
+  221:13  error  Unsafe spread of an `any` value in an array   @typescript-eslint/no-unsafe-assignment
+  221:33  error  Unsafe member access .head on an `any` value  @typescript-eslint/no-unsafe-member-access
+
+/app/packages/starlight/utils/head.ts
+   28:8   error  Unsafe assignment of an `any` value                                                                                                                                                                                                                            @typescript-eslint/no-unsafe-assignment
+   28:27  error  Unsafe member access .description on an `any` value                                                                                                                                                                                                            @typescript-eslint/no-unsafe-member-access
+   36:36  error  Unsafe member access .title on an `any` value                                                                                                                                                                                                                  @typescript-eslint/no-unsafe-member-access
+   57:49  error  Unsafe assignment of an `any` value                                                                                                                                                                                                                            @typescript-eslint/no-unsafe-assignment
+   57:63  error  Unsafe member access .title on an `any` value                                                                                                                                                                                                                  @typescript-eslint/no-unsafe-member-access
+   64:60  error  Unsafe assignment of an `any` value                                                                                                                                                                                                                            @typescript-eslint/no-unsafe-assignment
+   77:34  error  Unsafe assignment of an `any` value                                                                                                                                                                                                                            @typescript-eslint/no-unsafe-assignment
+  119:47  error  Unsafe argument of type `any` assigned to a parameter of type `{ tag: "title" | "link" | "style" | "base" | "meta" | "script" | "noscript" | "template"; attrs?: Record<string, string | boolean | undefined> | undefined; content?: string | undefined; }[]`  @typescript-eslint/no-unsafe-argument
+  119:52  error  Unsafe member access .head on an `any` value                                                                                                                                                                                                                   @typescript-eslint/no-unsafe-member-access
+
+/app/packages/starlight/utils/navigation.ts
+  164:8   error  Unsafe assignment of an `any` value                                                                                                                                                                                                  @typescript-eslint/no-unsafe-assignment
+  165:8   error  Unsafe assignment of an `any` value                                                                                                                                                                                                  @typescript-eslint/no-unsafe-assignment
+  168:15  error  Unsafe member access .sidebar on an `any` value                                                                                                                                                                                      @typescript-eslint/no-unsafe-member-access
+  169:15  error  Unsafe member access .title on an `any` value                                                                                                                                                                                        @typescript-eslint/no-unsafe-member-access
+  170:8   error  Unsafe assignment of an `any` value                                                                                                                                                                                                  @typescript-eslint/no-unsafe-assignment
+  170:42  error  Unsafe member access .sidebar on an `any` value                                                                                                                                                                                      @typescript-eslint/no-unsafe-member-access
+  171:8   error  Unsafe assignment of an `any` value                                                                                                                                                                                                  @typescript-eslint/no-unsafe-assignment
+  171:33  error  Unsafe member access .sidebar on an `any` value                                                                                                                                                                                      @typescript-eslint/no-unsafe-member-access
+  174:3   error  Unsafe argument of type `any` assigned to a parameter of type `string`                                                                                                                                                               @typescript-eslint/no-unsafe-argument
+  175:19  error  Unsafe argument of type `any` assigned to a parameter of type `string | { variant: "note" | "danger" | "success" | "caution" | "tip" | "default"; text: string | Record<string, string>; class?: string | undefined; } | undefined`  @typescript-eslint/no-unsafe-argument
+  175:34  error  Unsafe argument of type `any` assigned to a parameter of type `string`                                                                                                                                                               @typescript-eslint/no-unsafe-argument
+  176:3   error  Unsafe argument of type `any` assigned to a parameter of type `Omit<HTMLAttributes<"a">, keyof AstroBuiltinAttributes | "children"> | undefined`                                                                                     @typescript-eslint/no-unsafe-argument
+  241:36  error  Unsafe member access .sidebar on an `any` value                                                                                                                                                                                      @typescript-eslint/no-unsafe-member-access
+  278:3   error  Unsafe argument of type `any` assigned to a parameter of type `string`                                                                                                                                                               @typescript-eslint/no-unsafe-argument
+  278:20  error  Unsafe member access .sidebar on an `any` value                                                                                                                                                                                      @typescript-eslint/no-unsafe-member-access
+  278:54  error  Unsafe member access .title on an `any` value                                                                                                                                                                                        @typescript-eslint/no-unsafe-member-access
+  279:3   error  Unsafe argument of type `any` assigned to a parameter of type `{ variant: "note" | "danger" | "success" | "caution" | "tip" | "default"; text: string; class?: string | undefined; } | undefined`                                    @typescript-eslint/no-unsafe-argument
+  279:20  error  Unsafe member access .sidebar on an `any` value                                                                                                                                                                                      @typescript-eslint/no-unsafe-member-access
+  280:3   error  Unsafe argument of type `any` assigned to a parameter of type `Omit<HTMLAttributes<"a">, keyof AstroBuiltinAttributes | "children"> | undefined`                                                                                     @typescript-eslint/no-unsafe-argument
+  280:35  error  Unsafe member access .sidebar on an `any` value                                                                                                                                                                                      @typescript-eslint/no-unsafe-member-access
+  289:2   error  Unsafe return of a value of type `any`                                                                                                                                                                                               @typescript-eslint/no-unsafe-return
+  292:27  error  Unsafe member access .sidebar on an `any` value                                                                                                                                                                                      @typescript-eslint/no-unsafe-member-access
+
+/app/packages/starlight/utils/routing/data.ts
+   40:59  error  Unsafe assignment of an error typed value                                                                                                                                                                                                                                @typescript-eslint/no-unsafe-assignment
+   41:25  error  Unsafe assignment of an error typed value                                                                                                                                                                                                                                @typescript-eslint/no-unsafe-assignment
+   59:26  error  Unsafe member access .template on an `any` value                                                                                                                                                                                                                         @typescript-eslint/no-unsafe-member-access
+   60:60  error  Unsafe argument of type `any` assigned to a parameter of type `{ prev?: string | boolean | { label?: string | undefined; link?: string | undefined; } | undefined; next?: string | boolean | { label?: string | undefined; link?: string | undefined; } | undefined; }`  @typescript-eslint/no-unsafe-argument
+   61:3   error  Unsafe assignment of an `any` value                                                                                                                                                                                                                                      @typescript-eslint/no-unsafe-assignment
+   69:8   error  Unsafe assignment of an `any` value                                                                                                                                                                                                                                      @typescript-eslint/no-unsafe-assignment
+   70:14  error  Unsafe member access .template on an `any` value                                                                                                                                                                                                                         @typescript-eslint/no-unsafe-member-access
+   72:17  error  Unsafe member access .tableOfContents on an `any` value                                                                                                                                                                                                                  @typescript-eslint/no-unsafe-member-access
+   73:18  error  Unsafe member access .tableOfContents on an `any` value                                                                                                                                                                                                                  @typescript-eslint/no-unsafe-member-access
+   77:2   error  Unsafe return of a value of type `any`                                                                                                                                                                                                                                   @typescript-eslint/no-unsafe-return
+   79:32  error  Unsafe argument of type `any` assigned to a parameter of type `TocOpts`                                                                                                                                                                                                  @typescript-eslint/no-unsafe-argument
+   84:8   error  Unsafe assignment of an `any` value                                                                                                                                                                                                                                      @typescript-eslint/no-unsafe-assignment
+  102:8   error  Unsafe assignment of an `any` value                                                                                                                                                                                                                                      @typescript-eslint/no-unsafe-assignment
+
+/app/packages/starlight/utils/routing/index.ts
+  42:7   error  Unsafe assignment of an `any` value            @typescript-eslint/no-unsafe-assignment
+  42:36  error  Unsafe call of a(n) `any` typed value          @typescript-eslint/no-unsafe-call
+  45:56  error  Unsafe member access .draft on an `any` value  @typescript-eslint/no-unsafe-member-access
+  47:3   error  Unsafe member access .map on an `any` value    @typescript-eslint/no-unsafe-member-access
+
+/app/packages/starlight/utils/starlight-page.ts
+   31:8   error  Unsafe assignment of an `any` value                                                                                                                                                                                                                                      @typescript-eslint/no-unsafe-assignment
+   32:8   error  Unsafe assignment of an `any` value                                                                                                                                                                                                                                      @typescript-eslint/no-unsafe-assignment
+   32:56  error  Unsafe call of a(n) `any` typed value                                                                                                                                                                                                                                    @typescript-eslint/no-unsafe-call
+   34:2   error  Unsafe return of a value of type `any`                                                                                                                                                                                                                                   @typescript-eslint/no-unsafe-return
+   34:9   error  Unsafe call of a(n) `any` typed value                                                                                                                                                                                                                                    @typescript-eslint/no-unsafe-call
+   34:16  error  Unsafe member access .transform on an `any` value                                                                                                                                                                                                                        @typescript-eslint/no-unsafe-member-access
+   53:9   error  Unsafe assignment of an `any` value                                                                                                                                                                                                                                      @typescript-eslint/no-unsafe-assignment
+   54:9   error  Unsafe assignment of an `any` value                                                                                                                                                                                                                                      @typescript-eslint/no-unsafe-assignment
+   55:3   error  Unsafe return of a value of type `any`                                                                                                                                                                                                                                   @typescript-eslint/no-unsafe-return
+   55:23  error  Unsafe assignment of an `any` value                                                                                                                                                                                                                                      @typescript-eslint/no-unsafe-assignment
+  118:8   error  Unsafe assignment of an `any` value                                                                                                                                                                                                                                      @typescript-eslint/no-unsafe-assignment
+  131:3   error  Unsafe assignment of an `any` value                                                                                                                                                                                                                                      @typescript-eslint/no-unsafe-assignment
+  145:34  error  Unsafe member access .editUrl on an `any` value                                                                                                                                                                                                                          @typescript-eslint/no-unsafe-member-access
+  145:52  error  Unsafe argument of type `any` assigned to a parameter of type `string | URL`                                                                                                                                                                                             @typescript-eslint/no-unsafe-argument
+  145:68  error  Unsafe member access .editUrl on an `any` value                                                                                                                                                                                                                          @typescript-eslint/no-unsafe-member-access
+  146:8   error  Unsafe assignment of an `any` value                                                                                                                                                                                                                                      @typescript-eslint/no-unsafe-assignment
+  147:19  error  Unsafe member access .lastUpdated on an `any` value                                                                                                                                                                                                                      @typescript-eslint/no-unsafe-member-access
+  147:65  error  Unsafe member access .lastUpdated on an `any` value                                                                                                                                                                                                                      @typescript-eslint/no-unsafe-member-access
+  166:46  error  Unsafe member access .template on an `any` value                                                                                                                                                                                                                         @typescript-eslint/no-unsafe-member-access
+  169:3   error  Unsafe assignment of an `any` value                                                                                                                                                                                                                                      @typescript-eslint/no-unsafe-assignment
+  170:60  error  Unsafe argument of type `any` assigned to a parameter of type `{ prev?: string | boolean | { label?: string | undefined; link?: string | undefined; } | undefined; next?: string | boolean | { label?: string | undefined; link?: string | undefined; } | undefined; }`  @typescript-eslint/no-unsafe-argument
+  175:3   error  Unsafe assignment of an `any` value                                                                                                                                                                                                                                      @typescript-eslint/no-unsafe-assignment
+  182:8   error  Unsafe assignment of an `any` value                                                                                                                                                                                                                                      @typescript-eslint/no-unsafe-assignment
+  202:2   error  Unsafe return of a value of type `Promise<any>`                                                                                                                                                                                                                          @typescript-eslint/no-unsafe-return
+  213:8   error  Unsafe assignment of an `any` value                                                                                                                                                                                                                                      @typescript-eslint/no-unsafe-assignment
+  214:26  error  Unsafe member access .docs on an `any` value                                                                                                                                                                                                                             @typescript-eslint/no-unsafe-member-access
+
+/app/packages/starlight/utils/translations.ts
+  34:3   error  Unsafe argument of type `any` assigned to a parameter of type `Iterable<readonly [PropertyKey, objectOutputType<extendShape<extendShape<extendShape<{ 'skipLink.label': ZodOptional<ZodString>; 'search.label': ZodOptional<ZodString>; 'search.ctrlKey': ZodOptional<...>; ... 24 more ...; 'heading.anchorLabel': ZodOptional<...>; }, { ...; }>, { ...; }>, any>, any, "passthrough"> | (...`  @typescript-eslint/no-unsafe-argument
+  34:3   error  Unsafe call of a(n) `any` typed value                                                                                                                                                                                                                                                                                                                                                             @typescript-eslint/no-unsafe-call
+  34:33  error  Unsafe member access .map on an `any` value                                                                                                                                                                                                                                                                                                                                                       @typescript-eslint/no-unsafe-member-access
+  35:10  error  Unsafe assignment of an `any` value                                                                                                                                                                                                                                                                                                                                                               @typescript-eslint/no-unsafe-assignment
+  38:41  error  Unsafe argument of type `any` assigned to a parameter of type `string`                                                                                                                                                                                                                                                                                                                            @typescript-eslint/no-unsafe-argument
+  38:41  error  Unsafe call of a(n) `any` typed value                                                                                                                                                                                                                                                                                                                                                             @typescript-eslint/no-unsafe-call
+  38:50  error  Unsafe member access .replace on an `any` value                                                                                                                                                                                                                                                                                                                                                   @typescript-eslint/no-unsafe-member-access
+
+✖ 132 problems (132 errors, 0 warnings)
+
+ ELIFECYCLE  Command failed with exit code 1.

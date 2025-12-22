@@ -124,6 +124,7 @@ describe('getSidebar', () => {
 			  {
 			    "badge": undefined,
 			    "collapsed": false,
+			    "containsCurrent": true,
 			    "entries": [
 			      {
 			        "attrs": {
