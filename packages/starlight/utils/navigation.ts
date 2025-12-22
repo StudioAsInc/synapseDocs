@@ -422,6 +422,7 @@ function setIntermediateSidebarCurrentEntry(
 		}
 
 		if (entry.type === 'group' && setIntermediateSidebarCurrentEntry(entry.entries, pathname)) {
+			entry.containsCurrent = true;
 			return true;
 		}
 	}
